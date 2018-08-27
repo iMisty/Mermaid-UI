@@ -1,0 +1,34 @@
+const webpack = require('webpack');
+const path = require('path');
+const OpenBrowserPlugin = require('open-browser-webpack-plugin');
+const uglify = require('uglifyjs-webpack-plugin');
+
+module.exports = {
+    entry: './components/js/main.js',
+    output: {
+        path: path.resolve(__dirname, './'),
+        filename: 'app.js'
+    },
+    module: {
+        rules: [
+            {test: /\.js$/, loader: 'babel-loader'},
+            {test: /\.less$/, loader: 'style-loader!css-loader!less-loader'},
+            {test: require.resolve('jquery'),
+                use: [
+                    {loader: 'expose-loader', options: '$'},
+                    {loader: 'expose-loader', options: 'jQuery'}
+                ]
+            }
+        ]
+    },
+    devServer:{
+        historyApiFallback:true,
+        hot:true,
+        inline:true
+    },
+    plugins: [
+        new OpenBrowserPlugin({ url: 'http://localhost:8080' }),
+        new webpack.HotModuleReplacementPlugin(),
+        new uglify()
+    ]
+}
