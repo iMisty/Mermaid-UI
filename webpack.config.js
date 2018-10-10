@@ -12,7 +12,7 @@ module.exports = {
     module: {
         rules: [
             {test: /\.js$/, loader: 'babel-loader'},
-            {test: /\.less$/, loader: 'style-loader!css-loader!less-loader'},
+            {test: /\.css$/, loader: 'style-loader!css-loader'},
             {test: require.resolve('jquery'),
                 use: [
                     {loader: 'expose-loader', options: '$'},
