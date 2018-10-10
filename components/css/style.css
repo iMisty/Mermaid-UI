@@ -7,10 +7,30 @@ body{
 }
 ul,li{
     list-style-type: none;
+    padding: 0;
+    margin: 0;
 }
 a{
     text-decoration: none;
 }
+p{
+    margin: 0;
+    padding: 0;
+}
+.section-title{
+    padding-top: 8vh;
+    text-align: center;
+}
+.fa-large{
+    font-size: 6em;
+}
+.green{
+    color: #81C784;
+}
+.l-padding-1px{
+    padding-right: 4px;
+}
+
 
 .header-nav{
     display: flex;
@@ -23,7 +43,7 @@ a{
     display: inline-flex;
 }
 .header-nav-list li{
-    padding: 4px 8px;
+    padding: 20px 8px;
 }
 .header-nav-list li a{
     color: #fff;
@@ -91,4 +111,94 @@ main section{
 }
 .second-section article h3{
     font-size: 1.6rem;
+}
+
+.third-section-lists{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    text-align: center;
+    padding: 8vh 0;
+}
+.third-section-lists a{
+    padding: 0 12px;
+    color: #999;
+    word-break: break-all;
+}
+.third-section-lists a img{
+    max-width: 360px;
+    max-height: 140px;
+}
+
+.forth-section{
+    flex-direction: column;
+    justify-content: space-around;
+}
+.forth-section-wrap{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 4vh 0;
+}
+.forth-section-left{
+    flex: 0.4;
+    padding: 2vh 0;
+}
+.forth-section-left p{
+    width: 80%;
+}
+.forth-section-button{
+    padding-top: 2vh;
+}
+
+.forth-section-right{
+    flex:0.38;
+}
+.forth-section-right ul li{
+    padding: 16px 0;
+    border-bottom: 1px solid #999;
+}
+.forth-section-right ul li:nth-last-child(1){
+    border:none;
+}
+.primany-button{
+    padding: 16px;
+    border: transparent;
+    border-radius: 20px;
+    background-color: #00B4DB;
+    color: #fff;
+    transition: .6s;
+}
+.primany-button:hover{
+    transition: .6s;
+    box-shadow: 0 4px 8px rgba(0,180,219,.5);
+}
+.primany-button:active{
+    transition: .6s;
+    box-shadow: none;
+}
+.forth-section-right ul li{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 80%;
+    line-height: 30px;
+}
+
+
+
+
+
+
+footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 4vh 0;
+}
+.footer-nav-list{
+    display: inline-flex;
+}
+.footer-nav-list li{
+    padding: 0 8px;
 }
