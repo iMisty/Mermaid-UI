@@ -185,7 +185,16 @@ main section{
     line-height: 30px;
 }
 
-
+.fifth-section{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 12vh;
+}
+.fifth-section-text{
+    padding-top: 4vh;
+    color: rgba(0,0,0,.54);
+}
 
 
 
@@ -201,4 +210,7 @@ footer{
 }
 .footer-nav-list li{
     padding: 0 8px;
+}
+.footer-social-button a{
+    padding: 0 4px;
 }
