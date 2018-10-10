@@ -12,10 +12,16 @@ ul,li{
 }
 a{
     text-decoration: none;
+    color: rgba(0,0,0,.54);
+}
+h3{
+    font-size: 1.6rem;
+    color: rgba(0,0,0,.87);
 }
 p{
     margin: 0;
     padding: 0;
+    color: rgba(0,0,0,.54);
 }
 .section-title{
     padding-top: 8vh;
@@ -30,14 +36,22 @@ p{
 .l-padding-1px{
     padding-right: 4px;
 }
-
+.primany-text{
+    color: rgba(0,0,0,.87);
+}
+.second-text{
+    color: rgba(0,0,0,.54);
+}
 
 .header-nav{
     display: flex;
     flex-direction: row;
-    justify-content: flex-end;
+    justify-content: space-around;
     position: fixed;
-    width: 86%;
+    width: 100%;
+}
+.header-nav div{
+    line-height: 62px;
 }
 .header-nav-list{
     display: inline-flex;
@@ -108,9 +122,6 @@ main section{
     padding: 0 12px;
     letter-spacing: 1px;
     word-break: break-all;
-}
-.second-section article h3{
-    font-size: 1.6rem;
 }
 
 .third-section-lists{
