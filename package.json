@@ -1,8 +1,8 @@
 {
   "name": "miya-carnival",
-  "version": "1.0.0",
+  "version": "0.1.1",
   "description": "Miya-Carnival's HomePage",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "webpack & webpack-dev-server --env development",
@@ -28,8 +28,10 @@
   "dependencies": {
     "babel-core": "^6.26.3",
     "babel-loader": "^7.1.5",
+    "css-loader": "^1.0.0",
     "expose-loader": "^0.7.5",
     "jquery": "^3.3.1",
+    "style-loader": "^0.23.1",
     "uglifyjs-webpack-plugin": "^2.0.1",
     "webpack": "^4.20.2"
   },

@@ -49,9 +49,13 @@ p{
     justify-content: space-around;
     position: fixed;
     width: 100%;
+    transition: .4s;
 }
 .header-nav div{
     line-height: 62px;
+}
+.header-logo-name{
+    color: #fff;
 }
 .header-nav-list{
     display: inline-flex;
@@ -64,7 +68,7 @@ p{
     font-size: 0.94rem;
 }
 
-.header-title{
+#header-title{
     display: flex;
     flex-direction: column;
     align-content: center;
@@ -100,25 +104,25 @@ main section{
     margin: 0 auto;
 }
 
-.first-section{
+#first-section{
     width: 72%;
     text-align: center;
     flex-wrap: wrap;
     padding: 8vh 0;
 }
-.first-section p{
+#first-section p{
     width: 80%;
     margin: 0 auto;
     font-size: 1.2rem;
     letter-spacing: 1px;
 }
 
-.second-section{
+#second-section{
     flex-direction: row;
     justify-content: space-around;
     text-align: center;
 }
-.second-section article{
+#second-section article{
     padding: 0 12px;
     letter-spacing: 1px;
     word-break: break-all;
@@ -141,7 +145,7 @@ main section{
     max-height: 140px;
 }
 
-.forth-section{
+#forth-section{
     flex-direction: column;
     justify-content: space-around;
 }
@@ -196,7 +200,7 @@ main section{
     line-height: 30px;
 }
 
-.fifth-section{
+#fifth-section{
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -214,7 +218,7 @@ footer{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    padding: 4vh 0;
+    padding: 2vh 0;
 }
 .footer-nav-list{
     display: inline-flex;
