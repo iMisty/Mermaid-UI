@@ -4,7 +4,7 @@ const OpenBrowserPlugin = require('open-browser-webpack-plugin');
 const uglify = require('uglifyjs-webpack-plugin');
 
 module.exports = {
-    entry: './components/js/main.js',
+    entry: './assets/js/main.js',
     output: {
         path: path.resolve(__dirname, './'),
         filename: 'app.js'

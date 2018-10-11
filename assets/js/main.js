@@ -1,9 +1,16 @@
 import $ from 'jquery';
 import css from '../css/style.css';
+import { setTemplate } from './template';
 
-$(document).scroll(function() {
+$(document).ready(() => {
+    setTemplate();
+});
+
+scrollTo();
+
+$(document).scroll(function () {
     let sTop = $(this).scrollTop();
-    let ft = $("#first-section").offset().top;
+    let ft = $("#first-section").offset().top - 6;
     
     if (sTop > ft) {
         $('.header-nav').css({'background-color':'#fff','box-shadow':'0 2px 12px rgba(0,0,0,.18)'});
