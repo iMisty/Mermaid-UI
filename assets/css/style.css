@@ -20,7 +20,7 @@ h1{
     font-size: 2.4rem;
 }
 h3{
-    font-size: 1.6rem;
+    font-size: 1.4rem;
     color: rgba(0,0,0,.87);
 }
 p{
@@ -47,6 +47,12 @@ p{
 .second-text{
     color: rgba(0,0,0,.54);
 }
+button:focus,button:active{
+    border:none;
+}
+
+
+
 
 .header-nav{
     display: flex;
@@ -89,6 +95,7 @@ p{
     padding: 8px 0;
     color: #fff;
     letter-spacing: 1px;
+    line-height: 30px;
 }
 
 main{
@@ -138,7 +145,7 @@ main section{
     flex-direction: row;
     justify-content: space-around;
     text-align: center;
-    padding: 8vh 0;
+    padding: 8vh 0 0 0;
 }
 .third-section-lists a{
     padding: 0 12px;
