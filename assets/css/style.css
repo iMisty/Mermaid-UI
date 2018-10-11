@@ -4,6 +4,7 @@ body{
     background-color: #e6e6e6;
     font-size: 1rem;
     letter-spacing: 1px;
+    overflow-x: hidden;
 }
 ul,li{
     list-style-type: none;
@@ -240,4 +241,43 @@ footer{
 }
 .footer-social-button a{
     padding: 0 4px;
+}
+
+
+@media screen and (max-width: 960px) {
+    .header-nav{
+        justify-content: space-between;
+    }
+    .navlist{
+        display: none;
+    }
+    .logo{
+        padding-left: 8vh;
+    }
+
+    .header-title-text{
+        width: 96%;
+    }
+    #secend-section,.third-section-lists,.forth-section-wrap{
+        flex-direction: column;
+    }
+    article,.third-section-lists a{
+        padding: 4vh 0;
+    }
+    .forth-section-left{
+        text-align: center;
+    }
+    .forth-section-left p{
+        width: 100%;
+    }
+    .forth-section-right{
+        text-align: center;
+    }
+    .forth-section-list li{
+        width: 50%;
+        margin: 0 auto;
+    }
+    .forth-section-list li p{
+        margin: 0 auto;
+    }
 }
