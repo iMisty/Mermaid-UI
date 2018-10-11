@@ -5,9 +5,6 @@ import { setTemplate } from './template';
 $(document).ready(() => {
     setTemplate();
 });
-
-scrollTo();
-
 $(document).scroll(function () {
     let sTop = $(this).scrollTop();
     let ft = $("#first-section").offset().top - 40;
