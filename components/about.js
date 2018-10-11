@@ -7,7 +7,8 @@ function setAbout(){
         <h2>${about.title}</h2>
     </div>
     <p class="header-title-text fifth-section-text">${about.text}</p>
-    `);
+    `
+    );
 }
 
 export { setAbout };
