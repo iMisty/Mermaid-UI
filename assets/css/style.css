@@ -258,10 +258,10 @@ footer{
     .header-title-text{
         width: 96%;
     }
-    #secend-section,.third-section-lists,.forth-section-wrap{
+    #second-section,.third-section-lists,.forth-section-wrap{
         flex-direction: column;
     }
-    article,.third-section-lists a{
+    #second-section article,.third-section-lists a{
         padding: 4vh 0;
     }
     .forth-section-left{
