@@ -31,7 +31,7 @@ var navList = [
 header.title = 'Miya Carnival';
 header.text = '路过的熟悉，如同有你，已无转身的距离';
 
-introduce.text = 'Miya Carnival 是一套基于 BootStrap 与 React 的模板,只为内容渲染';
+introduce.text = 'Miya Carnival 是一套基于 BootStrap 与 Vue 的模板,只为内容渲染';
 
 advantage = [
     {
@@ -54,19 +54,19 @@ advantage = [
 yourProject.title = '近期作品';
 yourProject.obj = [
     {
-        link: 'https://jingyi21.github.io/Nekomimi/',
+        link: 'https://Miya-Yukarin.github.io/Nekomimi/',
         img: 'assets/imgs/project1.png',
         title: 'Nekomimi-多功能导航页',
         text: 'Nekomimi是一个简洁的导航页,可用于博客起始页面或固定内容落地页'
     },
     {
-        link: 'https://jingyi21.github.io/LandingPage/',
+        link: 'https://Miya-Yukarin.github.io/LandingPage/',
         img: 'assets/imgs/project2.png',
         title: 'LandingPage-简洁起始页',
         text: 'LandingPage是一个导航单页,仅输出标题与导航,无任何其他功能,回归简洁'
     },
     {
-        link: 'https://jingyi21.github.io/HTML-MinResume/',
+        link: 'https://Miya-Yukarin.github.io/HTML-MinResume/',
         img: 'assets/imgs/project3.png',
         title: 'Resume-个人简历项目',
         text: 'Resume是基于Bootstrap的个人简历项目,纯粹为展示内容而生'
@@ -76,7 +76,7 @@ yourProject.obj = [
 github.title = '关于本项目';
 github.leftTitle = '免费且开源的模板';
 github.leftText = '本页面为开源模板,您可以随意修改并发布为您自己的网站页面';
-github.buttonLinks = 'https://github.com/Jingyi21/Miya-Carnival';
+github.buttonLinks = 'https://github.com/Jingyi21/Miya-Yukarin';
 github.rightTitle = '使用该模板您将获得';
 github.rightLists = ['6种不同的模板可自由组合','可快速部署于您的服务器','可自定义的组件列表','60个以上的组件','承诺不断更新'];
 
@@ -85,7 +85,7 @@ about.text = '具体的名字其实还没想好<br>我们是一个新成立的�
 
 socialIcon = [
     {
-        link: 'https://github.com/jingyi21',
+        link: 'https://github.com/Miya-Yukarin',
         icon: 'fa-github'
     },
     {
