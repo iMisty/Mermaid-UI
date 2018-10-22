@@ -76,7 +76,7 @@ yourProject.obj = [
 github.title = '关于本项目';
 github.leftTitle = '免费且开源的模板';
 github.leftText = '本页面为开源模板,您可以随意修改并发布为您自己的网站页面';
-github.buttonLinks = 'https://github.com/Jingyi21/Miya-Yukarin';
+github.buttonLinks = 'https://github.com/Miya-Yukarin/Miya-Yukarin';
 github.rightTitle = '使用该模板您将获得';
 github.rightLists = ['6种不同的模板可自由组合','可快速部署于您的服务器','可自定义的组件列表','60个以上的组件','承诺不断更新'];
 
