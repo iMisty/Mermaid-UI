@@ -1,46 +1,21 @@
-# Miya-Carnival
+# yukarin-homepage
 
-![npm v6.0.0](https://img.shields.io/badge/NPM-6.0.0-blue.svg) 
-![IE](https://img.shields.io/badge/IE-10%2B-ff69b4.svg) 
-![Chrome](https://img.shields.io/badge/Chrome-29%2B-brightgreen.svg) 
-![Android](https://img.shields.io/badge/Android-4.4%2B-brightgreen.svg) 
-![iOS](https://img.shields.io/badge/iOS-9.2%2B-brightgreen.svg)
+> A homepage made with Vue
 
-## 项目说明
+## Build Setup
 
-### 关于此项目
+``` bash
+# install dependencies
+npm install
 
-这个项目是被噪音蹂躏的途中产生的,看着天花板觉得:就这么做吧.于是,就诞生了 Miya Carnival 这个项目
+# serve with hot reload at localhost:8080
+npm run dev
 
-### 目前状况
+# build for production with minification
+npm run build
 
-**制作更新中**
+# build for production and view the bundle analyzer report
+npm run build --report
+```
 
-## 如何部署
-
-1. git clone 这个项目
-
-> git clone https://github.com/Jingyi21/Miya-Carnival.git
-
-2. 安装依赖
-
-> cd Miya-Carnival && npm install
-
-3. 部署展示
-
-> npm start
-
-## 特别感谢
-
-Miya Carnival 项目离不开以下开源项目的支持,对此表示衷心感谢
-
-- jQuery
-- MDUI
-- Bootstrap
-- React
-
-## 更新日志
-
-### v0.2
-
-- 增加对移动设备的支持
+For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
