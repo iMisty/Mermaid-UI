@@ -8,10 +8,8 @@
 
 <script>
 import logo from './logo'
-import navigation from './navigation'
-import socialButton from './social-button'
 export default {
-  components: { logo, navigation, socialButton },
+  components: { logo },
   props: {},
   data () {
     return {

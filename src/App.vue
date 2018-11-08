@@ -4,9 +4,9 @@
       <logo />
       <navigation />
     </div>
-    <Header />
+    <v-header />
     <wrap />
-    <Footer />
+    <v-footer />
   </div>
 </template>
 
@@ -21,9 +21,9 @@ export default {
   components: {
     logo,
     navigation,
-    Header,
+    'v-header': Header,
     wrap,
-    Footer
+    'v-footer': Footer
   }
 }
 </script>

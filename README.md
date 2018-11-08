@@ -35,7 +35,8 @@
 Miya Carnival 项目离不开以下开源项目的支持,对此表示衷心感谢
 
 - Vue
-- Vue.Router
+- Vue-Router
+- animate.css
 - Font-awesome
 
 

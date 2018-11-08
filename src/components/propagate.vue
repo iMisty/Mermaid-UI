@@ -16,7 +16,11 @@ import viewButton from './view-button'
 import starButton from './star-button'
 import forkButton from './fork-button'
 export default {
-  components: { viewButton, starButton, forkButton },
+  components: { 
+      'view-button': viewButton, 
+      'star-button': starButton, 
+      'fork-button': forkButton 
+      },
   props: {},
   data () {
     return {

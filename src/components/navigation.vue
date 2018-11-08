@@ -11,9 +11,8 @@
 </template>
 
 <script>
-import logo from './logo'
 export default {
-  components: { logo },
+  components: {  },
   data () {
     return {
       list: [
