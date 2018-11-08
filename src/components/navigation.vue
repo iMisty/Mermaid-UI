@@ -1,9 +1,8 @@
 <template>
-<div>
+<div class="navigation">
     <ul>
         <li v-for="list of list"
-            :key="list.index"
-        >
+            :key="list.index">
             <a :href="list.link">{{ list.value }}</a>
         </li>
     </ul>
@@ -12,7 +11,7 @@
 
 <script>
 export default {
-  components: {  },
+  components: {},
   data () {
     return {
       list: [

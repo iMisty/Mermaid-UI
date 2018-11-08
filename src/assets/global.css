@@ -5,6 +5,7 @@ body{
     font-size: 1rem;
     letter-spacing: 1px;
     overflow-x: hidden;
+    translate: .6s;
 }
 ul,li{
     list-style-type: none;

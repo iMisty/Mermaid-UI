@@ -1,29 +1,29 @@
 <template>
   <div id="app">
     <div id="nav">
-      <logo />
-      <navigation />
+      <logo/>
+      <navigation/>
     </div>
-    <v-header />
-    <wrap />
-    <v-footer />
+    <section-header/>
+    <section-wrap/>
+    <section-footer/>
   </div>
 </template>
 
 <script>
 import logo from './components/logo'
 import navigation from './components/navigation'
-import Header from './components/header'
-import wrap from './components/wrap'
+import Header from './components/section/header'
+import wrap from './components/section/wrap'
 import Footer from './components/footer'
 export default {
   name: 'App',
   components: {
     logo,
     navigation,
-    'v-header': Header,
-    wrap,
-    'v-footer': Footer
+    'section-header': Header,
+    'section-wrap': wrap,
+    'section-footer': Footer
   }
 }
 </script>

@@ -6,18 +6,17 @@
 
 <script>
 export default {
-  components: {},
-  props: {},
-  data () {
-    return {
-      message: 'Miya Carnival 是一套基于 BootStrap 与 Vue 的模板,只为内容渲染'
-    }
-  },
-  watch: {},
-  computed: {},
-  methods: {},
-  created () {},
-  mounted () {}
+    components: {},
+    props: ['message'],
+    data () {
+        return {
+        }
+    },
+    watch: {},
+    computed: {},
+    methods: {},
+    created () {},
+    mounted () {}
 }
 </script>
 <style scoped>
