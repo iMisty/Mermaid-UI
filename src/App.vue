@@ -13,8 +13,8 @@
 <script>
 import logo from './components/logo'
 import navigation from './components/navigation'
-import Header from './components/section/header'
-import wrap from './components/section/wrap'
+import Header from './components/header'
+import wrap from './components/wrap'
 import Footer from './components/footer'
 export default {
   name: 'App',
