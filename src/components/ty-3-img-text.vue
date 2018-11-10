@@ -1,17 +1,18 @@
 <template>
-    <article class="advantage-item">
-        <i class="fa fa-4x" :class="icon"></i>
+    <a :href="href" class="project-item">
+        <img :src="src" :alt="title">
         <h3>{{ title }}</h3>
         <p>{{ text }}</p>
-    </article>
+    </a>
 </template>
 
 <script>
 export default {
   components: {},
-  props: ['icon','title','text'],
+  props: ['href','src','title','text'],
   data () {
-    return {}
+    return {
+    }
   },
   watch: {},
   computed: {},
@@ -21,18 +22,25 @@ export default {
 }
 </script>
 <style lang="less" scoped>
-
-article{
-    flex-direction: row;
+a{
+    display: flex;
+    flex-direction: column;
     justify-content: space-around;
     text-align: center;
-    padding: 0 12px;
-    letter-spacing: 1px;
+    padding: 2vh 12px;
     word-break: break-all;
-}
-@media screen and (max-width: 960px){
-    div{
-        flex-direction: column !important;
+    transition: .4s;
+    &:hover{
+        transform:translate(0,-4px);
+        box-shadow: 0 4px 8px rgba(0,0,0,.18);
+    }
+    @media screen and (max-width: 960px){
+        flex-direction: row;
     }
 }
+img{
+    max-width: 360px;
+    max-height: 140px;
+}
+
 </style>

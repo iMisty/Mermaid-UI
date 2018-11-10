@@ -1,6 +1,6 @@
 <template>
 <div>
-    <p>{{ message }}</p>
+    <h2>{{ message }}</h2>
 </div>
 </template>
 
@@ -19,21 +19,19 @@ export default {
     mounted () {}
 }
 </script>
-<style scoped>
+<style lang="less" scoped>
 div{
     width: 72%;
     text-align: center;
     flex-wrap: wrap;
     padding: 8vh 0;
+    h2{
+        width: 80%;
+        margin: 0 auto;
+        font-size: 1.5rem;
+        letter-spacing: 1px;
+        color: rgba(0,0,0,.87);
+    }
 }
-p{
-    width: 80%;
-    margin: 0 auto;
-    font-size: 1.2rem;
-    letter-spacing: 1px;
-}
-.content-title{
-    font-size: 1.2rem;
-    color: rgba(0,0,0,.87);
-}
+
 </style>
