@@ -25,23 +25,33 @@
                     :text="item.text"/>
             </section>
         </div>
-        <github />
+        <div class="github">
+            <simple-title
+                class="content-title"
+                :message="githubTitle"/>
+            <section class="github-items">
+                <propagate/>
+                <promise/>
+            </section>
+        </div>
+        
     </div>
 </template>
 
 <script>
 import simpleText from './ty-simple-text'
+import simpleTitle from './ty-simple-title'
 import advantage from './ty-3-svg-text'
-import title from './ty-simple-title'
 import project from './ty-3-img-text'
 
-import github from './github'
+import propagate from './propagate'
+import promise from './promise'
 
 export default {
     components: { 
         'simple-text': simpleText,
-        'simple-title': title, 
-        advantage, project, github },
+        'simple-title': simpleTitle, 
+        advantage, project,promise,propagate },
     props: [],
     data () {
         return {
@@ -71,7 +81,8 @@ export default {
                     title: 'Resume-个人简历项目',
                     text: 'Resume是基于Bootstrap的个人简历项目,纯粹为展示内容而生'
                 }
-            ]
+            ],
+            githubTitle: '关于本项目'
         }   
     },
     watch: {},
@@ -97,6 +108,12 @@ export default {
     }
     .project-items{
         flex-direction: row;
+    }
+    .github-items{
+        flex-direction: row;
+        width: 100%;
+        justify-content: space-around;
+        padding: 4vh 0;
     }
     div{
         display: flex;

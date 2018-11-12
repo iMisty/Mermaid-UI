@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <section>
         <h3>{{ message }}</h3>
         <ul>
             <li v-for="item of list" :key="item.index">
@@ -7,7 +7,7 @@
                 <p>{{ item }}</p>
             </li>
         </ul>
-    </div>
+    </section>
 </template>
 
 <script>
@@ -28,14 +28,13 @@ export default {
 }
 </script>
 <style scoped>
-div{
+section{
     flex:0.38;
 }
 li{
     display: flex;
     flex-direction: row;
     align-items: center;
-    width: 80%;
     line-height: 30px;
     padding: 16px 0;
     border-bottom: 1px solid #999;
