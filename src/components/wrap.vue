@@ -34,7 +34,6 @@
                     <propagate
                         :title="githubSecondTitle"
                         :text="githubText"/>
-
                 </section>
                 <section class="promise">
                     <promise/>                    
@@ -50,7 +49,6 @@ import simpleText from './ty-simple-text'
 import simpleTitle from './ty-simple-title'
 import advantage from './ty-3-svg-text'
 import project from './ty-3-img-text'
-
 
 import propagate from './propagate'
 import promise from './promise'
