@@ -4,31 +4,28 @@
         <h3>{{ title }}</h3>
         <p>{{ text }}</p>
         <section class="button">
-            <view-button
-                :links="bigButton.links"
+            <big-button
+                :href="bigButton.links"
                 :message="bigButton.message"/>
-            <star-button/>
+            <!--<normal-button/>
+            <normal-button/> -->
         </section>
     </div>
 </template>
 
 <script>
 import bigButton from './ty-big-button'
-import starButton from './star-button'
 export default {
   components: { 
-      'view-button': bigButton, 
-      'star-button': starButton, 
-      },
-  props: {},
+      'big-button': bigButton
+    },
+  props: ['title','text'],
   data () {
     return {
-      title: '免费且开源的模板',
-      text: '本页面为开源模板,您可以随意修改并发布为您自己的网站页面',
-      bigButton:{
-        links: 'https://github.com/Miya-Yukarin',
-        message: 'View Demo On GitHub'
-      }
+        bigButton: {
+            links: 'https://github.com/Miya-Yukarin',
+            message: 'View Demo On GitHub'
+        }
     }
   },
   watch: {},

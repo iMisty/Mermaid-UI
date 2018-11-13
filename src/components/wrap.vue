@@ -28,10 +28,17 @@
         <div class="github">
             <simple-title
                 class="content-title"
-                :message="githubTitle"/>
+                :message="githubPrimanyTitle"/>
             <section class="github-items">
-                <propagate/>
-                <promise/>
+                <section class="github-propagate prop">
+                    <propagate
+                        :title="githubSecondTitle"
+                        :text="githubText"/>
+
+                </section>
+                <section class="promise">
+                    <promise/>                    
+                </section>
             </section>
         </div>
         
@@ -44,6 +51,7 @@ import simpleTitle from './ty-simple-title'
 import advantage from './ty-3-svg-text'
 import project from './ty-3-img-text'
 
+
 import propagate from './propagate'
 import promise from './promise'
 
@@ -51,7 +59,11 @@ export default {
     components: { 
         'simple-text': simpleText,
         'simple-title': simpleTitle, 
-        advantage, project,promise,propagate },
+        advantage, 
+        project,
+        propagate,
+        promise,
+    },
     props: [],
     data () {
         return {
@@ -82,7 +94,9 @@ export default {
                     text: 'Resume是基于Bootstrap的个人简历项目,纯粹为展示内容而生'
                 }
             ],
-            githubTitle: '关于本项目'
+            githubPrimanyTitle: '关于本项目',
+            githubSecondTitle: '免费且开源的模板',
+            githubText: '本页面为开源模板,您可以随意修改并发布为您自己的网站页面',
         }   
     },
     watch: {},

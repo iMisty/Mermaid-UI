@@ -1,6 +1,6 @@
 <template>
     <section>
-        <h3>{{ message }}</h3>
+        <h3>{{ message1 }}</h3>
         <ul>
             <li v-for="item of list" :key="item.index">
                 <i class="fa fa-check"></i>
@@ -13,10 +13,10 @@
 <script>
 export default {
   components: {},
-  props: {},
+  props: ['message'],
   data () {
     return {
-      message: '使用该模板您将得到',
+      message1: '使用该模板您将得到',
       list: ['6种不同的模板可自由组合', '可快速部署于您的服务器', '可自定义的组件列表', '60个以上的组件', '承诺不断更新']
     }
   },
