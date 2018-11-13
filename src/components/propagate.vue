@@ -7,17 +7,23 @@
             <big-button
                 :href="bigButton.links"
                 :message="bigButton.message"/>
-            <!--<normal-button/>
-            <normal-button/> -->
+            <normal-button
+                v-for="item of list"
+                :key="item.index"
+                :icon="item.icon"
+                :links="item.links"
+                :message="item.message"/>
         </section>
     </div>
 </template>
 
 <script>
 import bigButton from './ty-big-button'
+import normalButton from './ty-normal-button'
 export default {
   components: { 
-      'big-button': bigButton
+      'big-button': bigButton,
+      'normal-button': normalButton
     },
   props: ['title','text'],
   data () {
@@ -25,7 +31,11 @@ export default {
         bigButton: {
             links: 'https://github.com/Miya-Yukarin',
             message: 'View Demo On GitHub'
-        }
+        },
+        list: [
+            {links: 'https://github.com/Miya-Yukarin/Miya-Carnival', icon: 'fa-star', message: 'Star'},
+            {links: 'https://github.com/Miya-Yukarin/Miya-Carnival', icon: 'fa-code-fork', message: 'Fork'}
+        ]
     }
   },
   watch: {},
