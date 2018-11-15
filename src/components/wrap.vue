@@ -40,7 +40,6 @@
                 </section>
             </section>
         </div>
-        
     </div>
 </template>
 
@@ -117,15 +116,26 @@ export default {
     box-shadow: 0 8px 40px rgba(0,0,0,.4);
     .advantage{
         flex-direction: row;
+        @media screen and (max-width: 770px) {
+            flex-direction: column;
+            article{
+                padding: 2vh 0;
+            }
+        }
     }
     .project-items{
         flex-direction: row;
+        flex-wrap: wrap;
     }
     .github-items{
         flex-direction: row;
         width: 100%;
         justify-content: space-around;
         padding: 4vh 0;
+        @media screen and (max-width: 770px) {
+            flex-direction: column;
+            padding: 0;
+        }
     }
     div{
         display: flex;
