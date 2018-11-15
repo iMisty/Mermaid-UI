@@ -29,10 +29,9 @@ article{
     padding: 0 12px;
     letter-spacing: 1px;
     word-break: break-all;
-}
-@media screen and (max-width: 960px){
-    div{
-        flex-direction: column !important;
+    @media screen and (max-width: 770px) {
+        flex-direction: column;
     }
 }
+
 </style>
