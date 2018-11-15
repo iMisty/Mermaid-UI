@@ -5,7 +5,7 @@
         <p>{{ text }}</p>
         <section class="button">
             <big-button
-                :href="bigButton.links"
+                :links="bigButton.links"
                 :message="bigButton.message"/>
             <normal-button
                 v-for="item of list"
@@ -61,8 +61,11 @@ export default {
     }
     .button{
         display: inline-flex;
-        padding: 2vh 4px 0 4px;
+        padding: 2vh 4px 4px 4px;
         line-height: 46px;
+        @media screen and (max-width: 770px) {
+            justify-content: center;
+        }
     }
 }
 

@@ -3,7 +3,7 @@
     <ul>
         <li v-for="list of list"
             :key="list.index">
-            <a :href="list.link">{{ list.value }}</a>
+            <a :href="list.link" class="nav-items">{{ list.value }}</a>
         </li>
     </ul>
 </div>

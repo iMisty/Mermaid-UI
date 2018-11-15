@@ -1,6 +1,6 @@
 <template>
 <section>
-    <a :href="link">{{ message }}</a>
+    <a :href="link" class="logo-item">{{ message }}</a>
 </section>
 </template>
 
