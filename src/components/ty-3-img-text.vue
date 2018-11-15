@@ -24,6 +24,7 @@ export default {
 <style lang="less" scoped>
 a{
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     justify-content: space-around;
     text-align: center;
@@ -34,9 +35,12 @@ a{
         transform:translate(0,-4px);
         box-shadow: 0 4px 8px rgba(0,0,0,.18);
     }
-    @media screen and (max-width: 960px){
-        flex-direction: row;
-    }
+    @media screen and (max-width: 770px) {
+            flex-direction: column;
+            article{
+                padding: 2vh 0;
+            }
+        }
 }
 img{
     max-width: 360px;
