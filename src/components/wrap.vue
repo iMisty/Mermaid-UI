@@ -40,6 +40,13 @@
                 </section>
             </section>
         </div>
+        <div class="about-us">
+            <simple-title
+                :message="aboutList.title"/>
+            <simple-text
+                :message="aboutList.text"
+                class="about-text"/>
+        </div>
     </div>
 </template>
 
@@ -94,7 +101,15 @@ export default {
             githubPrimanyTitle: '关于本项目',
             githubSecondTitle: '免费且开源的模板',
             githubText: '本页面为开源模板,您可以随意修改并发布为您自己的网站页面',
-        }   
+            aboutList: {
+                title: '关于我们',
+                text:  `具体的名字其实还没想好
+                        我们是一个新成立的社团
+                        虽然来自不同的领域
+                        但是由于共同的爱好走到了一起
+                        我们刚刚起步,请多指教`
+            }
+        }
     },
     watch: {},
     computed: {},
@@ -125,7 +140,9 @@ export default {
     }
     .project-items{
         flex-direction: row;
-        flex-wrap: wrap;
+        @media screen and (max-width: 770px) {
+            flex-wrap: wrap;
+        }
     }
     .github-items{
         flex-direction: row;
@@ -147,6 +164,10 @@ export default {
         display: flex;
         flex-direction: column;
         margin: 0 auto;
+    }
+    .about-text{
+        padding: 0 0 8vh 0;
+        line-height: 48px;
     }
 }
 </style>
