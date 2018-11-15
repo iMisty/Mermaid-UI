@@ -26,6 +26,7 @@ a{
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
+    align-items: center;
     justify-content: space-around;
     text-align: center;
     padding: 2vh 12px;
@@ -37,6 +38,7 @@ a{
     }
     @media screen and (max-width: 770px) {
             flex-direction: column;
+            padding: 2vh 0;
             article{
                 padding: 2vh 0;
             }
