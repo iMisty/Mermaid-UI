@@ -26,6 +26,5 @@ export default {
 <style lang="less" scoped>
 div{
     display: flex;
-    align-items: center;
 }
 </style>
