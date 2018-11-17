@@ -80,7 +80,7 @@ export default {
             projectTitle: '近期作品',
             projectList: [
                 {
-                    link: 'https://Miya-Yukarin.github.io/Nekomimi/',
+                    link: 'https://Miya-Yukarin.github.io/JS-Nekomimi/',
                     src: require('../assets/project1.png'),
                     title: 'Nekomimi-多功能导航页',
                     text: 'Nekomimi是一个简洁的导航页,可用于博客起始页面或固定内容落地页'
