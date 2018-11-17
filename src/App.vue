@@ -4,9 +4,9 @@
             id="nav" 
             :class="navBarFixed == true ? 'isFixed' : ''">
             <logo
-            :class="navBarColorFixed == true ? 'colorFixed' : ''"/>
+                :class="navBarColorFixed == true ? 'colorFixed' : ''"/>
             <navigation
-            :class="navBarColorFixed == true ? 'colorFixed' : ''"/>
+                :class="navBarColorFixed == true ? 'colorFixed' : ''"/>
         </div>
         <section-header/>
         <section-wrap/>
@@ -77,13 +77,5 @@ export default {
         transition: .4s;
     }
 }
-.isFixed{
-    background-color: #fff;
-    box-shadow: 0 2px 12px rgba(0,0,0,.18);
-    z-index: 8;
-}
-.colorFixed a,.colorFixed ul li a{
-    color: rgba(0,0,0,.54);
-    font-weight: 400;
-}
+
 </style>
