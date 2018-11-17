@@ -1,8 +1,12 @@
 <template>
     <div id="app">
-        <div id="nav">
-            <logo/>
-            <navigation/>
+        <div 
+            id="nav" 
+            :class="navBarFixed == true ? 'isFixed' : ''">
+            <logo
+            :class="navBarColorFixed == true ? 'colorFixed' : ''"/>
+            <navigation
+            :class="navBarColorFixed == true ? 'colorFixed' : ''"/>
         </div>
         <section-header/>
         <section-wrap/>
@@ -11,11 +15,12 @@
 </template>
 
 <script>
-import logo from './components/logo'
-import navigation from './components/navigation'
-import Header from './components/header'
-import wrap from './components/wrap'
-import Footer from './components/footer'
+import logo from './components/logo';
+import navigation from './components/navigation';
+import Header from './components/header';
+import wrap from './components/wrap';
+import Footer from './components/footer';
+
 export default {
     name: 'App',
     components: {
@@ -24,11 +29,38 @@ export default {
         'section-header': Header,
         'section-wrap': wrap,
         'section-footer': Footer
-    }
+    },
+    data(){
+        return{
+            navBarFixed: false,
+            navBarColorFixed: false
+        }
+    },
+    mounted() {
+        window.addEventListener('scroll', this.handleScroll);
+    },
+    methods: {
+        handleScroll() {
+            let scrollTop = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop;
+
+            const offsetTop = document.querySelector('#app').offsetTop;
+
+            if (scrollTop > offsetTop) {
+                this.navBarFixed = true;
+                this.navBarColorFixed = true;
+            } else {
+                this.navBarFixed = false;
+                this.navBarColorFixed = false;
+            }
+        }
+    },
+    destroyed() {
+        window.removeEventListener('scroll', this.handleScroll);  
+    },
 }
 </script>
 
-<style lang="less" scoped>
+<style lang="less">
 #app{
     margin: 0;
     padding: 0;
@@ -45,5 +77,13 @@ export default {
         transition: .4s;
     }
 }
-
+.isFixed{
+    background-color: #fff;
+    box-shadow: 0 2px 12px rgba(0,0,0,.18);
+    z-index: 8;
+}
+.colorFixed a,.colorFixed ul li a{
+    color: rgba(0,0,0,.54);
+    font-weight: 400;
+}
 </style>

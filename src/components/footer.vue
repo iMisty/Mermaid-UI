@@ -1,7 +1,7 @@
 <template>
     <footer>
-        <logo class="footer"/>
-        <navigation class="footer"/>
+        <logo class="footer colorFixed"/>
+        <navigation class="footer colorFixed"/>
         <section class="social-items">
             <social-button
                 v-for="item of list"
