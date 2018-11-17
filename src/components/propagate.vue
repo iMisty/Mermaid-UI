@@ -4,10 +4,10 @@
         <h3>{{ title }}</h3>
         <p>{{ text }}</p>
         <section class="button">
-            <big-button
+            <Big-button
                 :links="bigButton.links"
                 :message="bigButton.message"/>
-            <normal-button
+            <Normal-button
                 v-for="item of list"
                 :key="item.index"
                 :icon="item.icon"
@@ -22,8 +22,8 @@ import bigButton from './ty-big-button'
 import normalButton from './ty-normal-button'
 export default {
   components: { 
-      'big-button': bigButton,
-      'normal-button': normalButton
+      'Big-button': bigButton,
+      'Normal-button': normalButton
     },
   props: ['title','text'],
   data () {
