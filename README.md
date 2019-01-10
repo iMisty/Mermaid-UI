@@ -10,17 +10,18 @@
 
 ### 关于此项目
 
-这个是原先项目更新为Vue版本的源代码,如果想查阅在线Demo,请点击这里:https://miya-yukarin.github.io/Yukarin-Carnvial-HomePage/
+这个是原先项目更新为Vue版本的源代码,如果想查阅在线Demo,请点击这里:https://iMisty.github.io/Yukarin-Carnvial-HomePage/
 
 ### 目前状况
 
-已完成
+~~已完成~~(2018.11.29)
+待重构
 
 ## 如何部署
 
 1. git clone 这个项目
 
-> git clone https://github.com/Jingyi21/Miya-Carnival.git
+> git clone https://github.com/iMisty/Miya-Carnival.git
 
 2. 安装依赖
 
