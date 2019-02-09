@@ -10,7 +10,7 @@
 
 ### 关于此项目
 
-这个是原先项目更新为Vue版本的源代码,如果想查阅在线Demo,请点击这里:https://iMisty.github.io/Yukarin-Carnvial-HomePage/
+这个是原先项目更新为Vue版本的源代码,如果想查阅在线Demo,请点击这里:https://imisty.github.io/Miya-Carnival/dist/index.html
 
 ### 目前状况
 
