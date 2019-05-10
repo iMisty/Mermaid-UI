@@ -1,0 +1,43 @@
+@charset "UTF-8";
+
+html{
+  box-sizing: border-box;
+  -ms-overflow-style: scrollbar;
+}
+
+*{
+  box-sizing: inherit;
+  &::after{
+    box-sizing: inherit;
+  }
+  &::before{
+    box-sizing: inherit;
+  }
+}
+
+.container{
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 16px;
+  padding-right: 16px;
+  *{
+    display: flex;
+  }
+}
+
+.row{
+  flex-direction: row;
+}
+
+.column{
+  flex-direction: column;
+}
+
+.generate-column(16);
+.generate-column(@n,@i:1) when (@i <= @n){
+  .ys-column-@{i}{
+    width: (@i * 100 / @n);
+  }
+  .generate-column(@n, (@i + 1));
+}
