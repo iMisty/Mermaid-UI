@@ -1,0 +1,27 @@
+{
+  "name": "yukarin-style",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iMisty/Yukarin-Style.git"
+  },
+  "author": "Misty",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/iMisty/Yukarin-Style/issues"
+  },
+  "homepage": "https://github.com/iMisty/Yukarin-Style#readme",
+  "dependencies": {
+    "css-loader": "^2.1.1",
+    "extract-text-webpack-plugin": "^3.0.2",
+    "less": "^3.9.0",
+    "less-loader": "^5.0.0",
+    "style-loader": "^0.23.1",
+    "webpack": "^4.30.0"
+  }
+}
