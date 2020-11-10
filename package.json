@@ -1,12 +1,30 @@
 {
-  "name": "mermaid",
-  "version": "0.1.0",
-  "private": true,
+  "name": "mermaidui",
+  "version": "0.1.4",
+  "private": false,
+  "description": "Mermaid UI",
+  "author": "iMisty<s@goth-loli.club>",
+  "license": "MIT",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "lib": "vue-cli-service build --target lib --name mermaidui ./src/index.ts"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iMisty/Mermaid-UI/tree/master"
+  },
+  "bugs": {
+    "url": "https://github.com/iMisty/Mermaid-UI/issues"
+  },
+  "homepage": "https://github.com/iMisty/Mermaid-UI/tree/master",
+  "keywords": [
+    "vue",
+    "vuejs",
+    "typescript",
+    "vuecli4.x"
+  ],
   "dependencies": {
     "core-js": "^3.6.5",
     "vue": "^2.6.11",
@@ -29,6 +47,7 @@
     "less": "^3.0.4",
     "less-loader": "^5.0.0",
     "typescript": "~3.9.3",
+    "uglifyjs-webpack-plugin": "^2.2.0",
     "vue-template-compiler": "^2.6.11"
   }
 }

@@ -1,14 +1,14 @@
 /*
  * @Author: Miya
  * @Date: 2020-11-09 15:14:05
- * @LastEditTime: 2020-11-09 18:07:29
+ * @LastEditTime: 2020-11-10 12:23:05
  * @LastEditors: Miya
  * @Description: Mermaid-UI Model
- * @FilePath: \LandingPagec:\Users\Platinum Prism\Documents\GitHub\Mermaid-UI\src\components\model\model.ts
+ * @FilePath: \Mermaid-UI\src\components\model\index.ts
  * @Version: 1.0
  */
 import Vue from 'vue';
-import Model from './model';
+import Model from '.';
 // import MermaidModel from '@/components/MermaidModel';
 
 
