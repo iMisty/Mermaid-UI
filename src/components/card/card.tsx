@@ -1,5 +1,5 @@
 import { Component, Prop, Vue } from 'vue-property-decorator';
-
+import './card.model.less';
 @Component({})
 export default class MermaidCard extends Vue {
   @Prop({ default: 'Title' })
