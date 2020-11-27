@@ -1,10 +1,10 @@
 /*
  * @Author: Miya
  * @Date: 2020-11-10 10:39:36
- * @LastEditTime: 2020-11-10 12:20:22
+ * @LastEditTime: 2020-11-24 11:08:31
  * @LastEditors: Miya
  * @Description:
- * @FilePath: \Mermaid-UI\src\index.ts
+ * @FilePath: \Single-Search-APIc:\Users\Platinum Prism\Documents\GitHub\Mermaid-UI\src\index.ts
  * @Version: 1.0
  */
 import mButton from '@/components/button/button';
@@ -25,7 +25,7 @@ import mSwitch from '@/components/switch/switch';
 const mermaidui = [mSwitch, mButton, mModel];
 
 const install = (Vue: any) => {
-  if ((install as any).insatlled) return;
+  if ((install as any).installed) return;
   (install as any).installed = true;
   mermaidui.map((component) => {
     Vue.component(component.name, component);
