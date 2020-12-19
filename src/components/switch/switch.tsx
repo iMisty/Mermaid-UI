@@ -1,10 +1,10 @@
 /*
  * @Author: Miya
  * @Date: 2020-09-10 15:36:56
- * @LastEditTime: 2020-09-13 21:02:34
+ * @LastEditTime: 2020-12-11 16:22:02
  * @LastEditors: Miya
  * @Description: Switch component in Mermaid UI
- * @FilePath: /Mermaid-UI/src/components/switch/switch.tsx
+ * @FilePath: \Single-Search-APIc:\Users\Platinum Prism\Documents\GitHub\Mermaid-UI\src\components\switch\switch.tsx
  * @Version: 0.3
  */
 
