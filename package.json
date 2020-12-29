@@ -1,37 +1,20 @@
 {
-  "name": "mermaidui",
-  "version": "0.1.4",
-  "private": false,
-  "description": "Mermaid UI",
-  "author": "iMisty<s@goth-loli.club>",
-  "license": "MIT",
+  "name": "mermaid",
+  "version": "0.1.0",
+  "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint",
-    "lib": "vue-cli-service build --target lib --name mermaidui ./src/index.ts"
+    "lint": "vue-cli-service lint"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/iMisty/Mermaid-UI/tree/master"
-  },
-  "bugs": {
-    "url": "https://github.com/iMisty/Mermaid-UI/issues"
-  },
-  "homepage": "https://github.com/iMisty/Mermaid-UI/tree/master",
-  "keywords": [
-    "vue",
-    "vuejs",
-    "typescript",
-    "vuecli4.x"
-  ],
   "dependencies": {
     "core-js": "^3.6.5",
+    "font-awesome": "^4.7.0",
     "vue": "^2.6.11",
     "vue-class-component": "^7.2.3",
     "vue-property-decorator": "^8.4.2",
     "vue-router": "^3.2.0",
-    "vue-tsx-support": "^2.3.3"
+    "vuex": "^3.4.0"
   },
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^2.33.0",
@@ -40,6 +23,7 @@
     "@vue/cli-plugin-eslint": "~4.5.0",
     "@vue/cli-plugin-router": "~4.5.0",
     "@vue/cli-plugin-typescript": "~4.5.0",
+    "@vue/cli-plugin-vuex": "~4.5.0",
     "@vue/cli-service": "~4.5.0",
     "@vue/eslint-config-typescript": "^5.0.2",
     "eslint": "^6.7.2",
@@ -47,7 +31,6 @@
     "less": "^3.0.4",
     "less-loader": "^5.0.0",
     "typescript": "~3.9.3",
-    "uglifyjs-webpack-plugin": "^2.2.0",
     "vue-template-compiler": "^2.6.11"
   }
 }
