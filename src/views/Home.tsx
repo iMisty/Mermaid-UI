@@ -15,6 +15,9 @@ export default class Home extends Vue {
               <i class="fa fa-plane"></i>
               <p class="text">111111111111</p>
             </header>
+            <article class="mermaid__leftlist--list">
+              
+            </article>
           </section>
         </div>
       </div>
