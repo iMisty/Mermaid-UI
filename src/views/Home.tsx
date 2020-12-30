@@ -1,7 +1,12 @@
 import { Component, Vue } from 'vue-property-decorator';
 import 'font-awesome/css/font-awesome.min.css';
+import LeftListItem from '../components/leftlist/leftlistitem';
 
-@Component({})
+@Component({
+  components: {
+    leftlistitem: LeftListItem
+  }
+})
 export default class Home extends Vue {
   private render() {
     return (
@@ -16,30 +21,11 @@ export default class Home extends Vue {
               <p class="text">111111111111</p>
             </header>
             <article class="mermaid__leftlist--list">
-              <section class="mermaid__leftlist--list--item">
-                <i class="fa fa-plane"></i>
-                <p class="text">111111111111</p>
-              </section>
-              <section class="mermaid__leftlist--list--item">
-                <i class="fa fa-plane"></i>
-                <p class="text">2222222222222</p>
-              </section>
-              <section class="mermaid__leftlist--list--item">
-                <i class="fa fa-plane"></i>
-                <p class="text">3333333333333</p>
-              </section>
-              <section class="mermaid__leftlist--list--item">
-                <i class="fa fa-plane"></i>
-                <p class="text">44444444444</p>
-              </section>
-              <section class="mermaid__leftlist--list--item">
-                <i class="fa fa-plane"></i>
-                <p class="text">5555555555555</p>
-              </section>
-              <section class="mermaid__leftlist--list--item">
-                <i class="fa fa-plane"></i>
-                <p class="text">66666666666666s</p>
-              </section>
+              <leftlistitem></leftlistitem>
+              <leftlistitem></leftlistitem>
+              <leftlistitem></leftlistitem>
+              <leftlistitem></leftlistitem>
+              <leftlistitem></leftlistitem>
             </article>
           </section>
         </div>
