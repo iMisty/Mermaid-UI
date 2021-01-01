@@ -1,13 +1,14 @@
 /*
  * @Author: Miya
  * @Date: 2020-09-03 17:08:06
- * @LastEditTime: 2020-11-09 17:57:45
+ * @LastEditTime: 2021-01-04 12:19:47
  * @LastEditors: Miya
  * @Description: Button component in Mermaid UI
- * @FilePath: \Mermaid-UI\src\components\button\button.tsx
+ * @FilePath: \Single-Search-APIc:\Users\Platinum Prism\Documents\GitHub\Mermaid-UI\src\components\button\button.tsx
  * @Version: 0.2
  */
 import { Component, Vue, Prop, Emit } from "vue-property-decorator";
+import './button.less';
 @Component({})
 export default class MermaidButton extends Vue {
   // Button Color
@@ -33,7 +34,7 @@ export default class MermaidButton extends Vue {
   private render() {
     return (
       <button
-        class={`mermaid__button mermaid__button--${this.color} mermaid__button--type-${this.type}-${this.color}`}
+        class={`mmui__button mmui__button--${this.color} mmui__button--type-${this.type}-${this.color}`}
         onClick={this.handleClick}
       >
         {this.$slots.default}
