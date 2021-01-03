@@ -1,5 +1,6 @@
 import { Component, Emit, Vue } from 'vue-property-decorator';
 import MermaidButton from '@/components/button/button';
+import './model.less';
 
 @Component({
   components: {
@@ -46,16 +47,16 @@ export default class MermaidModel extends Vue {
     return (
       <transition name="fade" appear appear-class="fade-enter-active">
         {this.isShow ? (
-          <div class="mermaid__model">
-            <section class="mermaid__model--wrap">
-              <header class="mermaid__model--wrap--title">
+          <div class="mmui__model">
+            <section class="mmui__model--wrap">
+              <header class="mmui__model--wrap--title">
                 <h6 class="model--title">{this.text.title}</h6>
                 <i class="fa fa-close" onClick={() => this.close()}></i>
               </header>
-              <article class="mermaid__model--wrap--content">
+              <article class="mmui__model--wrap--content">
                 <p>{this.text.msg}</p>
               </article>
-              <footer class="mermaid__model--wrap--button">
+              <footer class="mmui__model--wrap--button">
                 {this.text.confirm ? (
                   <m-button onClickevent={() => this.confirm()}>
                     {this.text.btn.confirm}
@@ -73,7 +74,7 @@ export default class MermaidModel extends Vue {
               </footer>
             </section>
             <section
-              class="mermaid__model--mask"
+              class="mmui__model--mask"
               onClick={() => this.close()}
             ></section>
           </div>
