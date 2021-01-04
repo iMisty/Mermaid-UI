@@ -3,23 +3,22 @@ import 'font-awesome/css/font-awesome.min.css';
 import LeftListItem from '../components/leftlist/leftlistitem';
 // import Card from '../components/card/card';
 // import Model from '../components/model/model';
-import mButton from '../components/button/button';
+// import mButton from '../components/button/button';
+import mSwitch from '../components/switch/switch';
 
 @Component({
   components: {
     leftlistitem: LeftListItem,
     // Card
     // Model,
-    'm-button': mButton
+    // 'm-button': mButton,
+    'm-switch': mSwitch
   }
 })
 export default class Home extends Vue {
   private render() {
     return (
       <div class="home" style="background-color: #f3f4f5;">
-        <m-button color="info"><p>test button</p></m-button>
-        <m-button color="success"><p>test button2</p></m-button>
-
         <div
           class="home__left"
           style="width: 16rem;height: 100vh;background-color: #fff;padding: 0.5rem;"
@@ -37,6 +36,9 @@ export default class Home extends Vue {
               <leftlistitem></leftlistitem>
             </article>
           </section>
+        </div>
+        <div class="home__wrap">
+          <m-switch status={false}></m-switch>
         </div>
       </div>
     );
