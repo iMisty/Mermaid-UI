@@ -1,7 +1,7 @@
 /*
  * @Author: Miya
  * @Date: 2020-09-10 15:36:56
- * @LastEditTime: 2020-12-11 16:22:02
+ * @LastEditTime: 2021-01-04 16:44:04
  * @LastEditors: Miya
  * @Description: Switch component in Mermaid UI
  * @FilePath: \Single-Search-APIc:\Users\Platinum Prism\Documents\GitHub\Mermaid-UI\src\components\switch\switch.tsx
@@ -9,6 +9,7 @@
  */
 
 import { Component, Vue, Emit, Prop } from 'vue-property-decorator';
+import './switch.less';
 
 @Component({})
 export default class MermaidSwitch extends Vue {
@@ -46,11 +47,11 @@ export default class MermaidSwitch extends Vue {
 
   private render() {
     return (
-      <section class={`mermaid__switch ${this.getDisabledStatus}`}>
-        {this.disabled ? <div class='mermaid__mask'></div> : ''}
-        <section class='mermaid__switch--wrap' onClick={this.handleClick}>
-          <div class={`mermaid__switch--icon ${this.getSwitchActive}`}></div>
-          <div class='mermaid__switch--text'>{this.text}</div>
+      <section class={`mmui__switch ${this.getDisabledStatus}`}>
+        {this.disabled ? <div class="mmui__mask"></div> : ''}
+        <section class="mmui__switch--wrap" onClick={this.handleClick}>
+          <div class={`mmui__switch--icon ${this.getSwitchActive}`}></div>
+          <div class="mmui__switch--text">{this.text}</div>
         </section>
       </section>
     );
