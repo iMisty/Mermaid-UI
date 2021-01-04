@@ -13,7 +13,6 @@
 |    参数    |         说明         | 是否必须 | 数据类型 |                                数据可选                                 | 默认值  |
 | :--------: | :------------------: | :------: | :------: | :---------------------------------------------------------------------: | :-----: |
 |    slot    | 在插槽中插入任意内容 |          |   any    |                                                                         |
-| className  |       额外类名       |          |  string  |                                                                         |   ''    |
 |   color    |       按钮颜色       |          |  string  | primary<br>info<br>success<br>danger<br>warning<br>default<br>secondary | primary |
 |    ---     |         ---          |   ---    |   ---    |                                   ---                                   |   ---   |
 | clickevent |     触发点击事件     |          | function |
