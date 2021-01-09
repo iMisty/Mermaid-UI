@@ -37,11 +37,11 @@ export default class MermaidModel extends Vue {
     return (this.isShow = false);
   }
 
-  private mounted() {
-    setTimeout(() => {
-      console.log('mounted');
-    }, 1000);
-  }
+  // private mounted() {
+  //   setTimeout(() => {
+  //     console.log('mounted');
+  //   }, 1000);
+  // }
 
   private render() {
     return (
