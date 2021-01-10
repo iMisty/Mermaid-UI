@@ -4,7 +4,8 @@ import LeftListItem from '../components/leftlist/leftlistitem';
 // import Card from '../components/card/card';
 // import Model from '../components/model/model';
 // import mButton from '../components/button/button';
-import mSwitch from '../components/switch/switch';
+// import mSwitch from '../components/switch/switch';
+import mAlert from '../components/alerts/alerts';
 
 @Component({
   components: {
@@ -12,14 +13,15 @@ import mSwitch from '../components/switch/switch';
     // Card
     // Model,
     // 'm-button': mButton,
-    'm-switch': mSwitch
+    // 'm-switch': mSwitch
+    'm-alert': mAlert
   }
 })
 export default class Home extends Vue {
   private render() {
     return (
       <div class="home" style="background-color: #f3f4f5;">
-        <div
+        {/* <div
           class="home__left"
           style="width: 16rem;height: 100vh;background-color: #fff;padding: 0.5rem;"
         >
@@ -36,9 +38,12 @@ export default class Home extends Vue {
               <leftlistitem></leftlistitem>
             </article>
           </section>
-        </div>
+        </div> */}
         <div class="home__wrap">
-          <m-switch status={false}></m-switch>
+          {/* <m-switch status={false}></m-switch> */}
+          <m-alert></m-alert>
+          <m-alert></m-alert>
+          <m-alert></m-alert>
         </div>
       </div>
     );
