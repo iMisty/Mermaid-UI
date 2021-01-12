@@ -3,8 +3,6 @@ import './loading.less';
 
 @Component({})
 export default class Loading extends Vue {
-
-
   private render() {
     return (
       <section class="mmui__loading">
