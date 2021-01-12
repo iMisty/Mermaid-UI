@@ -1,11 +1,11 @@
 /*
  * @Author: Miya
  * @Date: 2020-12-29 15:04:19
- * @LastEditTime: 2021-01-12 16:03:24
+ * @LastEditTime: 2021-01-12 16:09:59
  * @LastEditors: Miya
  * @Description:
  * @FilePath: \Single-Search-APIc:\Users\Platinum Prism\Documents\GitHub\Mermaid-UI\src\main.ts
- * @Version:
+ * @Version: 1.0
  */
 import Vue from 'vue';
 import App from './App';
