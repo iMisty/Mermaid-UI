@@ -1,7 +1,7 @@
 /*
  * @Author: Miya
  * @Date: 2021-01-11 18:06:23
- * @LastEditTime: 2021-01-11 18:20:14
+ * @LastEditTime: 2021-01-12 10:26:39
  * @LastEditors: Miya
  * @Description: Alerts Components Extends
  * @FilePath: \Single-Search-APIc:\Users\Platinum Prism\Documents\GitHub\Mermaid-UI\src\components\alerts\index.ts
@@ -14,16 +14,16 @@ const confirmConstructor: any = Vue.extend(Alerts);
 
 const MermaidAlerts = (text: any) => {
   return new Promise((res, rej) => {
-    const modelDom = new confirmConstructor({
+    const alertDom = new confirmConstructor({
       el: document.createElement('div')
     });
-    document.body.appendChild(modelDom.$el);
+    document.body.appendChild(alertDom.$el);
 
-    modelDom.text = Object.assign({}, modelDom.text, text);
+    alertDom.text = Object.assign({}, alertDom.text, text);
 
-    modelDom.close = () => {
+    alertDom.close = () => {
       console.log('close');
-      modelDom.isShow = false;
+      alertDom.isShow = false;
       res('confirm');
     };
   });

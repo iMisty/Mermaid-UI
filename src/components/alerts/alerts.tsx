@@ -3,7 +3,9 @@ import './alerts.less';
 
 @Component({})
 export default class Alert extends Vue {
-  private text = 'This is a alert';
+  private text = {
+    title: 'This is a Alert'
+  };
 
   private style = 'primary';
 
@@ -20,7 +22,7 @@ export default class Alert extends Vue {
       <transition name="fade" appear appear-class="fade-enter-active">
         {this.isShow ? (
           <div class={`mmui__alert ${this.style}`}>
-            <section class="mmui__alert--text">{this.text}</section>
+            <section class="mmui__alert--text">{this.text.title}</section>
             <section
               class="mmui__alert--close"
               onClick={() => this.close()}

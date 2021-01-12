@@ -5,7 +5,8 @@ import LeftListItem from '../components/leftlist/leftlistitem';
 // import Model from '../components/model/model';
 // import mButton from '../components/button/button';
 // import mSwitch from '../components/switch/switch';
-import mAlert from '../components/alerts/alerts';
+// import mAlert from '../components/alerts/alerts';
+import mLoading from '../components/loading/loading';
 
 @Component({
   components: {
@@ -14,10 +15,12 @@ import mAlert from '../components/alerts/alerts';
     // Model,
     // 'm-button': mButton,
     // 'm-switch': mSwitch
-    'm-alert': mAlert
+    // 'm-alert': mAlert
+    'm-loading': mLoading
   }
 })
 export default class Home extends Vue {
+
   private render() {
     return (
       <div class="home" style="background-color: #f3f4f5;">
@@ -40,10 +43,7 @@ export default class Home extends Vue {
           </section>
         </div> */}
         <div class="home__wrap">
-          {/* <m-switch status={false}></m-switch> */}
-          <m-alert></m-alert>
-          <m-alert></m-alert>
-          <m-alert></m-alert>
+          <m-loading></m-loading>
         </div>
       </div>
     );
