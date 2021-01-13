@@ -1,15 +1,29 @@
 @import '../../style/variable.less';
+
 .mmui__leftlist {
-  &--list {
-    margin-left: 0.5rem;
-    &--item {
-      display: grid;
-      grid-template-columns: 2rem auto 2rem;
-      align-items: center;
-      padding: 0.75rem 0.5rem;
-      margin: 0.5rem;
-      border-radius: 0.25rem;
-      background-color: #f2f2f9;
+  transition: 0.4s;
+  &.active > &--list {
+    max-height: inherit;
+  }
+
+  &--title {
+    display: grid;
+    grid-template-columns: 2rem auto 1rem;
+    align-items: center;    
+    padding: 0.75rem 0.5rem;
+    margin: 0.5rem;
+    border-radius: 0.25rem;
+    background-color: #f6f9fc;
+    & > .text {
+      color: @paragraph-text;
     }
+    & > .nav {
+      color: @description-text;
+    }
+  }
+  &--list {
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.4s;
   }
 }

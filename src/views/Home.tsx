@@ -7,6 +7,7 @@ import LeftListItem from '../components/leftlist/leftlistitem';
 // import mSwitch from '../components/switch/switch';
 // import mAlert from '../components/alerts/alerts';
 import mLoading from '../components/loading/loading';
+import mList from '../components/leftlist/leftlist';
 
 @Component({
   components: {
@@ -16,32 +17,38 @@ import mLoading from '../components/loading/loading';
     // 'm-button': mButton,
     // 'm-switch': mSwitch
     // 'm-alert': mAlert
-    'm-loading': mLoading
+    'm-loading': mLoading,
+    leftlist: mList
   }
 })
 export default class Home extends Vue {
+  private list1 = [
+    { icon: 'plane', text: '112233', router: '/' },
+    { icon: 'plane', text: '112222', router: '/' },
+    { icon: 'plane', text: '112211', router: '/' },
+    { icon: 'plane', text: '112244', router: '/' },
+    { icon: 'plane', text: '112266', router: '/' }
+  ];
+
+  private list2 = [
+    { icon: 'plane', text: '332233', router: '/' },
+    { icon: 'plane', text: '332222', router: '/' },
+    { icon: 'plane', text: '332211', router: '/' },
+    { icon: 'plane', text: '332244', router: '/' },
+    { icon: 'plane', text: '332266', router: '/' }
+  ];
 
   private render() {
     return (
       <div class="home" style="background-color: #f3f4f5;">
-        {/* <div
+        <div
           class="home__left"
           style="width: 16rem;height: 100vh;background-color: #fff;padding: 0.5rem;"
         >
-          <section class="mmui__leftlist">
-            <header class="mmui__leftlist--title mmui__leftlist--list--item">
-              <i class="fa fa-plane"></i>
-              <p class="text">111111111111</p>
-            </header>
-            <article class="mmui__leftlist--list">
-              <leftlistitem></leftlistitem>
-              <leftlistitem></leftlistitem>
-              <leftlistitem></leftlistitem>
-              <leftlistitem></leftlistitem>
-              <leftlistitem></leftlistitem>
-            </article>
-          </section>
-        </div> */}
+          <leftlist list={this.list1}></leftlist>
+          <leftlist list={this.list2}></leftlist>
+          <leftlist list={this.list1}></leftlist>
+        </div>
         <div class="home__wrap">
           <m-loading></m-loading>
         </div>

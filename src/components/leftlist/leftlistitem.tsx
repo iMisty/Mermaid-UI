@@ -1,5 +1,5 @@
 import { Component, Vue, Prop } from 'vue-property-decorator';
-import './leftlist.less';
+import './leftlistitem.less';
 @Component({})
 export default class LeftListItem extends Vue {
   @Prop({ default: 'plane' })
@@ -13,10 +13,14 @@ export default class LeftListItem extends Vue {
 
   private render() {
     return (
-      <div class={`mmui__leftlist--list--item`} to={this.router}>
-        <i class={`fa fa-${this.icon}`}></i>
+      <router-link
+        tag="div"
+        class={`mmui__leftlist--list--item`}
+        to={this.router}
+      >
+        {/* <i class={`fa fa-${this.icon}`}></i> */}
         <p class="text">{this.text}</p>
-      </div>
+      </router-link>
     );
   }
 }
