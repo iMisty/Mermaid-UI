@@ -8,6 +8,7 @@ import LeftListItem from '../components/leftlist/leftlistitem';
 // import mAlert from '../components/alerts/alerts';
 import mLoading from '../components/loading/loading';
 import mList from '../components/leftlist/leftlist';
+import mInput from '../components/input/input';
 
 @Component({
   components: {
@@ -18,7 +19,8 @@ import mList from '../components/leftlist/leftlist';
     // 'm-switch': mSwitch
     // 'm-alert': mAlert
     'm-loading': mLoading,
-    leftlist: mList
+    leftlist: mList,
+    'm-input': mInput
   }
 })
 export default class Home extends Vue {
@@ -38,9 +40,15 @@ export default class Home extends Vue {
     { icon: 'plane', text: '332266', router: '/' }
   ];
 
+  private style = {
+    display: 'grid',
+    'grid-template-columns': '16rem auto',
+    background: '#f3f4f5'
+  };
+
   private render() {
     return (
-      <div class="home" style="background-color: #f3f4f5;">
+      <div class="home" style={this.style}>
         <div
           class="home__left"
           style="width: 16rem;height: 100vh;background-color: #fff;padding: 0.5rem;"
@@ -50,7 +58,12 @@ export default class Home extends Vue {
           <leftlist list={this.list1}></leftlist>
         </div>
         <div class="home__wrap">
-          <m-loading></m-loading>
+          <m-input></m-input>
+          <m-input></m-input>
+
+          <m-input></m-input>
+
+          <m-input></m-input>
         </div>
       </div>
     );
