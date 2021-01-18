@@ -9,6 +9,7 @@ import LeftListItem from '../components/leftlist/leftlistitem';
 import mLoading from '../components/loading/loading';
 import mList from '../components/leftlist/leftlist';
 import mInput from '../components/input/input';
+import mCarousel from '../components/carousel/Carousel';
 
 @Component({
   components: {
@@ -20,7 +21,8 @@ import mInput from '../components/input/input';
     // 'm-alert': mAlert
     'm-loading': mLoading,
     leftlist: mList,
-    'm-input': mInput
+    'm-input': mInput,
+    'm-carousel': mCarousel
   }
 })
 export default class Home extends Vue {
@@ -58,12 +60,13 @@ export default class Home extends Vue {
           <leftlist list={this.list1}></leftlist>
         </div>
         <div class="home__wrap">
-          <m-input></m-input>
-          <m-input></m-input>
-
+          {/* <m-input></m-input>
           <m-input></m-input>
 
           <m-input></m-input>
+
+          <m-input></m-input> */}
+          <m-carousel></m-carousel>
         </div>
       </div>
     );
