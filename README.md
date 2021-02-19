@@ -5,6 +5,6 @@ Now Status： Coding
 
 --------------
 
-Vue2.6 + TSX ver in dev fork
+Vue2.6 + TSX ver in dev branch
 
-Vue3 + TSX ver in next // TODO
+Vue3 + TSX ver in next branch// TODO
