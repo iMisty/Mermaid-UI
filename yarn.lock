@@ -366,6 +366,20 @@ ansi-styles@^3.2.1:
   dependencies:
     color-convert "^1.9.0"
 
+babel-plugin-jsx-v-model@^2.0.3:
+  version "2.0.3"
+  resolved "https://registry.yarnpkg.com/babel-plugin-jsx-v-model/-/babel-plugin-jsx-v-model-2.0.3.tgz#c396416b99cb1af782087315ae1d3e62e070f47d"
+  integrity sha512-SIx3Y3XxwGEz56Q1atwr5GaZsxJ2IRYmn5dl38LFkaTAvjnbNQxsZHO+ylJPsd+Hmv+ixJBYYFEekPBTHwiGfQ==
+  dependencies:
+    babel-plugin-syntax-jsx "^6.18.0"
+    html-tags "^2.0.0"
+    svg-tags "^1.0.0"
+
+babel-plugin-syntax-jsx@^6.18.0:
+  version "6.18.0"
+  resolved "https://registry.yarnpkg.com/babel-plugin-syntax-jsx/-/babel-plugin-syntax-jsx-6.18.0.tgz#0af32a9a6e13ca7a3fd5069e62d7b0f58d0d8946"
+  integrity sha1-CvMqmm4Tyno/1QaeYtew9Y0NiUY=
+
 balanced-match@^1.0.0:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/balanced-match/-/balanced-match-1.0.2.tgz#e83e3a7e3f300b34cb9d87f615fa0cbf357690ee"
@@ -645,6 +659,11 @@ hash-sum@^2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/hash-sum/-/hash-sum-2.0.0.tgz#81d01bb5de8ea4a214ad5d6ead1b523460b0b45a"
   integrity sha512-WdZTbAByD+pHfl/g9QSsBIIwy8IT+EsPiKDs0KNX+zSHhdDLFKdZu0BQHljvO+0QI/BasbMSUa8wYNCZTvhslg==
+
+html-tags@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/html-tags/-/html-tags-2.0.0.tgz#10b30a386085f43cede353cc8fa7cb0deeea668b"
+  integrity sha1-ELMKOGCF9Dzt41PMj6fLDe7qZos=
 
 html-tags@^3.1.0:
   version "3.1.0"
