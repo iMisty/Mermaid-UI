@@ -1,0 +1,7 @@
+/example
+/node_modules
+/public
+index.html
+vite.config.ts
+vue.config.ts
+yarn.lock
