@@ -1,42 +1,31 @@
 <!--
  * @Author: Miya
  * @Date: 2020-09-03 17:08:06
- * @LastEditTime: 2021-04-08 15:47:29
- * @LastEditors: Please set LastEditors
+ * @LastEditTime: 2021-04-20 18:03:04
+ * @LastEditors: Miya
  * @Description: Input component in Mermaid UI
- * @FilePath: \Single-Search-APIc:\Users\Platinum Prism\Documents\GitHub\Mermaid-UI\src\components\input\input.tsx
- * @Version: 0.2
+ * @FilePath: \Mermaid-UI\temp\GlobalInput.vue
+ * @Version: 0.4
 -->
 
 <template>
-  <!-- <div class="{`mmui__input" ${this.grid}-grid`}>
-    <p class="mmui__input--title">{this.title}</p>
-    <label for="{this.value}">
-      <input class={`mmui__input--form form-${this.size}`} 
-      type={this.type}
-      placeholder={this.placeholder} 
-      value={this.a} 
-      v-model={this.a}
-      maxlength={this.maxlength} 
-      onInput={(e: { target: { value: string } }) =>
-      this.changeEvent(e)} />
-    </label>
-  </div> -->
   <div class="mmui__input" :class="[getGrid]">
     <section class="mmui__input--header">
       <p class="mmui__input--title">{{ title }}</p>
+      <p class="mmui__input--require" v-if="error === true">该字段为必填</p>
       <slot name="tips"></slot>
     </section>
     <label :for="value">
       <input
         class="mmui__input--form"
-        :class="[getSize]"
+        :class="[getSize, error ? 'require' : '']"
         :type="type"
         :value="value"
         :placeholder="placeholder"
         :maxlength="maxlength"
         @input="changeEvent($event)"
         :disabled="disabled"
+        @blur="blurEvent"
       />
     </label>
   </div>
@@ -68,13 +57,28 @@ export default {
       type: Boolean,
       default: false,
     },
+    required: {
+      type: Boolean,
+      dafault: true,
+    },
   },
   data() {
-    return {};
+    return {
+      error: false,
+    };
   },
   methods: {
     changeEvent($event) {
       this.$emit('input', $event.target.value);
+    },
+    blurEvent(e) {
+      if (e.target.value.length === 0 && this.$props.required) {
+        
+        this.$data.error = true;
+        return false;
+      }
+      this.$data.error = false;
+      return true;
     },
   },
   computed: {
@@ -82,7 +86,7 @@ export default {
       return `${this.$props.grid}-grid`;
     },
     getSize() {
-      return `form-${this.$props.size}`;
+      return `form-${this.$props.grid}`;
     },
   },
 };
@@ -94,7 +98,7 @@ export default {
   &__input {
     margin: 1rem 0;
     &--header {
-      .layout(flex, row,flex-start,center);
+      .layout(flex, row, flex-start, center);
       margin-bottom: 0.5rem;
     }
     &--title {
@@ -102,6 +106,10 @@ export default {
       color: @header-text;
       font-weight: 700;
       letter-spacing: 0.54px;
+    }
+    &--require {
+      font-size: @fontsize-p * 0.875;
+      color: @danger;
     }
     &--form {
       padding: 0.6rem 0.5rem;
@@ -123,6 +131,10 @@ export default {
       }
     }
   }
+}
+
+.require {
+  border: 1px solid @danger;
 }
 </style>
 
