@@ -1,17 +1,17 @@
 /*
  * @Author: Miya
- * @Date: 2021-04-20 17:32:39
- * @LastEditTime: 2021-04-20 18:11:54
+ * @Date: 2020-09-03 17:08:06
+ * @LastEditTime: 2021-04-21 10:16:54
  * @LastEditors: Miya
  * @Description: Button Component
  * @FilePath: \Mermaid-UI\package\button\button.tsx
- * @Version: 0.1
+ * @Version: 0.5
  */
 import { defineComponent, reactive, renderSlot } from 'vue';
 
 const data = reactive({});
 
-const MUI_Button = defineComponent({
+const MMUI_Button = defineComponent({
   setup(prop, ctx) {
     data;
     return { data };
@@ -34,4 +34,4 @@ const MUI_Button = defineComponent({
   },
 });
 
-export default MUI_Button;
+export default MMUI_Button;
