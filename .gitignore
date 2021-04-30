@@ -19,3 +19,10 @@ yarn-error.log*
 *.njsproj
 *.sln
 *.sw?
+
+# Old Version
+/old
+
+# Temp Version
+/temp
+/template
