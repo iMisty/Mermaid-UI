@@ -1,11 +1,11 @@
 import { defineComponent, reactive } from 'vue';
-import MMUISwitch from '../../package/switch/switch';
+import TestComponent from '../../package/input/input';
 
 const data = reactive({});
 
 const Home = defineComponent({
   components: {
-    'mmui-switch': MMUISwitch,
+    TestComponent,
   },
   setup(props, ctx) {
     return { data };
@@ -13,7 +13,7 @@ const Home = defineComponent({
   render() {
     return (
       <div class="home">
-        <mmui-switch></mmui-switch>
+        <TestComponent></TestComponent>
       </div>
     );
   },
