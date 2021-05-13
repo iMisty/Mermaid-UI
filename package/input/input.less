@@ -1,0 +1,40 @@
+@import '../style/variable.less';
+.mmui {
+  &__input {
+    margin: 1rem 0;
+    &--header {
+      .layout(flex, row, flex-start, center);
+      margin-bottom: 0.5rem;
+    }
+    &--title {
+      margin-right: 1rem;
+      color: @header-text;
+      font-weight: 700;
+      letter-spacing: 0.54px;
+    }
+    &--require {
+      font-size: @fontsize-p * 0.875;
+      color: @danger;
+      border: 1px solid @danger;
+    }
+    &--form {
+      padding: 0.6rem 0.5rem;
+      width: 100%;
+      font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-size: @fontsize-p;
+      color: @paragraph-text;
+      background-color: #fff;
+      border: 1px solid @description-text;
+      border-radius: @border-radius;
+      letter-spacing: 0.54px;
+      &::placeholder {
+        color: @description-text;
+      }
+      &:disabled {
+        background-color: #e9ecef;
+        color: #8898aa;
+        border: 1px solid #dee2e6;
+      }
+    }
+  }
+}
