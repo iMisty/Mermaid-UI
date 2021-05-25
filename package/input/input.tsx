@@ -201,7 +201,7 @@ const MermaidUIInput = defineComponent({
       default: 'placeholder',
     },
     // 文本框文本
-    value: {
+    modelValue: {
       type: String,
       value: '',
     },
@@ -211,28 +211,28 @@ const MermaidUIInput = defineComponent({
       default: 140,
     },
   },
-  emits: ['input'],
+  emits: ['update:modelValue'],
   setup(props, ctx) {
-    let values = props.value;
+    // let values = props.value;
     // Emit: 修改操作
     const handleChange = ($event?: HTMLElementEvent<HTMLTextAreaElement>) => {
       console.log($event);
       console.log(ctx);
-      return ctx.emit('input', $event?.target?.value);
+      return ctx.emit('update:modelValue', $event?.target?.value);
     };
-    return { values, handleChange };
+    return { handleChange };
   },
 
   render() {
     return (
       <div class={`mmui__input ${this.grid}-grid`}>
         <p class="mmui__input--title">{this.title}</p>
-        <label for={this.value}>
+        <label for={this.modelValue}>
           <input
             class={`mmui__input--form form-${this.size}`}
             type={this.$props.type}
             placeholder={this.$props.placeholder}
-            value={this.value}
+            value={this.modelValue}
             // v-model={this.value}
             maxlength={this.$props.maxlength}
             onInput={($event: any) => this.handleChange($event)}
