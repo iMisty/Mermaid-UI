@@ -1,7 +1,7 @@
-import { defineComponent, reactive } from 'vue';
+import { defineComponent, ref } from 'vue';
 import TestComponent from '../../package/input/input';
 
-const data = reactive({
+const data = ref({
   t: '333',
 });
 
@@ -15,10 +15,13 @@ const Home = defineComponent({
   render() {
     return (
       <div class="home">
-        <TestComponent
-          v-model={this.data.t}
-          value={this.data.t}
-        ></TestComponent>
+        <TestComponent v-model={this.data.t}></TestComponent>
+        <TestComponent v-model={this.data.t}></TestComponent>
+        <TestComponent v-model={this.data.t}></TestComponent>
+        <TestComponent v-model={this.data.t}></TestComponent>
+        <TestComponent v-model={this.data.t}></TestComponent>
+        <TestComponent v-model={this.data.t}></TestComponent>
+
         {this.data.t}
       </div>
     );
