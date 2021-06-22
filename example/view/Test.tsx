@@ -7,7 +7,7 @@
  * @FilePath: \Mermaid-UI\example\view\Test.tsx
  */
 import { defineComponent, ref } from 'vue';
-import TestComponent from '../../package/input/input';
+import TestComponent from '../../package/components/Input/input';
 
 const data = ref({
   t: '333',
