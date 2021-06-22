@@ -1,13 +1,13 @@
 /*
  * @Author: Miya
  * @Date: 2021-04-20 21:11:41
- * @LastEditTime: 2021-06-16 05:19:01
+ * @LastEditTime: 2021-06-23 23:44:13
  * @LastEditors: Miya
  * @Description:
  * @FilePath: \Mermaid-UI\example\view\Home.tsx
  */
 import { defineComponent } from 'vue';
-import TestComponent from '../../package/input/input';
+import TestComponent from '../../package/components/Input/input';
 import '../style/home.less';
 
 const Home = defineComponent({
