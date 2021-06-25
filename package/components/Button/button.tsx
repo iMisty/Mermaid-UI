@@ -1,16 +1,15 @@
 /*
  * @Author: Miya
  * @Date: 2020-09-03 17:08:06
- * @LastEditTime: 2021-06-16 05:21:37
+ * @LastEditTime: 2021-06-24 00:50:05
  * @LastEditors: Miya
  * @Description: Button Component
- * @FilePath: \Mermaid-UI\package\button\button.tsx
+ * @FilePath: \Mermaid-UI\package\components\Button\button.tsx
  * @Version: 0.5
  */
-import { defineComponent, reactive, renderSlot } from 'vue';
+import { defineComponent, renderSlot } from 'vue';
+import { props } from './props';
 import './button.less';
-
-const data = reactive({});
 
 const handleClick = () => {
   console.log('click button');
@@ -18,32 +17,8 @@ const handleClick = () => {
 
 const MermaidUIButton = defineComponent({
   name: 'MermaidUIButton',
-  props: {
-    color: {
-      type: String,
-      require: true,
-      default: 'primary',
-    },
-    type: {
-      type: String,
-      require: true,
-      default: 'round',
-    },
-    size: {
-      type: String,
-      require: true,
-      default: 'regular',
-    },
-    disabled: {
-      type: Boolean,
-      default: false,
-    },
-  },
+  props,
   emits: ['clickevent'],
-  setup(props, ctx) {
-    data;
-    return { data };
-  },
   render() {
     return (
       <button
