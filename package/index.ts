@@ -6,10 +6,10 @@
  * @Description: Main TS
  * @FilePath: \Mermaid-UI\package\index.ts
  */
-import Button from './components/Button/index';
-import Card from './components/Card/card';
-import Input from './components/Input/input';
-import Toast from './components/Toast/toast';
+import mButton from './components/Button/index';
+import mCard from './components/Card/card';
+import mInput from './components/Input/input';
+import mToast from './components/Toast/toast';
 
-export { Button, Card, Input, Toast };
+export { mButton, mCard, mInput, mToast };
 // export { Button };
