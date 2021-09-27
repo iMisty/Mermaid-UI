@@ -1,0 +1,10 @@
+Old/
+public/
+src/
+test/
+
+vue.config.js
+babel.config.js
+*.map
+yarn-error.log
+yarn.lock
