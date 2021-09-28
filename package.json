@@ -1,10 +1,13 @@
 {
-  "name": "mermaidui2",
-  "version": "0.1.0",
+  "name": "mermaidui",
+  "version": "0.3.0",
   "private": false,
+  "main": "lib/mermaidui.common.js",
+  "author": "Miya",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
+    "tsc": "tsc src/components/index.ts",
     "build:mermaid": "vue-cli-service build --target lib --dest lib src/components/index.js",
     "test:unit": "vue-cli-service test:unit",
     "lint": "vue-cli-service lint"
