@@ -1,10 +1,10 @@
 <!--
  * @Author: Miya
  * @Date: 2020-09-03 17:08:06
- * @LastEditTime: 2021-09-25 23:13:07
+ * @LastEditTime: 2021-10-01 02:46:08
  * @LastEditors: Miya
  * @Description: Button Component
- * @FilePath: \mermaidui2\src\components\mi-button\index.vue
+ * @FilePath: \MermaidUI\src\components\mi-button\index.vue
  * @Version: 0.5
 -->
 <template>
@@ -13,13 +13,13 @@
     class="mmui__button"
     :class="computedStyleClass"
     :disabled="getProps.disabled"
+    @click="handleEmitClickEvent"
   >
-    {{ getProps }}
+    <slot>Button</slot>
   </button>
 </template>
 
 <script lang="ts">
-// :class="computedStyleClass" :disabled="props.disabled"
 import { computed, defineComponent, reactive } from 'vue';
 
 const propsData = {
@@ -55,13 +55,19 @@ const MermaidUIButton = defineComponent({
   name: 'mi-button',
   emits: ['click'],
   props: propsData,
-  setup(props: ButtonProps) {
+  setup(props: ButtonProps, { emit }) {
+    // Data
     const getProps = reactive(props);
+    // Computed: Comupted Color and Type
     const computedStyleClass = computed(() => {
       const { color, type } = getProps;
       return `mmui__button--${color} mmui__button--type-${type}-${color}`;
     });
-    return { computedStyleClass, getProps };
+    // Emit: Click Event
+    const handleEmitClickEvent = (): void => {
+      emit('click', getProps);
+    };
+    return { computedStyleClass, getProps, handleEmitClickEvent };
   },
 });
 
