@@ -1,10 +1,10 @@
 /*
  * @Author: Miya
  * @Date: 2021-09-25 20:54:39
- * @LastEditTime: 2021-09-25 22:53:36
+ * @LastEditTime: 2021-10-01 01:20:49
  * @LastEditors: Miya
  * @Description: ESlint Config
- * @FilePath: \mermaidui2\.eslintrc.js
+ * @FilePath: \MermaidUI\.eslintrc.js
  */
 module.exports = {
   root: true,
