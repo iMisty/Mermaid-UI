@@ -1,16 +1,18 @@
 /*
  * @Author: Miya
  * @Date: 2021-09-25 21:45:04
- * @LastEditTime: 2021-09-25 23:15:00
+ * @LastEditTime: 2021-10-01 04:11:41
  * @LastEditors: Miya
  * @Description: Components Export
- * @FilePath: \mermaidui2\src\components\index.ts
+ * @FilePath: \MermaidUI\src\components\index.ts
  */
 /* eslint-disable */
-import miButton from './mi-button/index.vue';
+import miButton from '@/components/mi-button/index.vue';
+import miCard from '@/components/mi-card/index.vue';
 
 const components = {
   miButton,
+  miCard,
 };
 function install(vue: any): void {
   const keys = Object.keys(components);
